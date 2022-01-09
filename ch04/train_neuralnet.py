@@ -43,7 +43,7 @@ for i in range(iters_num):
         test_acc = network.accuracy(x_test, t_test)
         train_acc_list.append(train_acc)
         test_acc_list.append(test_acc)
-        print("train acc, test acc | " + str(train_acc) + ", " + str(test_acc))
+        print("train acc : {:.4f}, test acc : {:.4f}".format(train_acc, test_acc))
 
 # 绘制图形
 markers = {'train': 'o', 'test': 's'}
